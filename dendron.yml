@@ -1,0 +1,36 @@
+version: 1
+vaults:
+    -
+        fsPath: repos/org-private
+        remote:
+            type: git
+            url: 'TODO'
+        name: private
+    -
+        fsPath: repos/org-dev
+        name: dev
+        remote:
+            type: git
+            url: 'TODO'
+useFMTitle: true
+useNoteTitleForLink: true
+usePrettyRefs: false
+noXVaultWikiLink: true
+site:
+    copyAssets: true
+    siteHierarchies:
+        - handbook
+    siteRootDir: docs
+    usePrettyRefs: true
+    siteUrl: 'TODO'
+    title: Dendron
+    duplicateNoteBehavior:
+        action: useVault
+        payload:
+            - dendron
+            - handbook
+            - notes
+            - aws
+initializeRemoteVaults: true
+useKatex: false
+defaultInsertHierarchy: templates
