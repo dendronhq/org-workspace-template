@@ -1,12 +1,12 @@
 {
     "folders": [
         {
-            "path": "repos/org-private",
-            "name": "private"
+            "path": "org-dev",
+            "name": "dev"
         },
         {
-            "path": "repos/org-dev",
-            "name": "dev"
+            "path": "org-private",
+            "name": "private"
         },
         {
             "path": ".",
@@ -19,14 +19,11 @@
         "pasteImage.path": "${currentFileDir}/assets/images",
         "pasteImage.prefix": "/",
         "dendron.defaultTimestampDecorationFormat": "DATE_MED_WITH_WEEKDAY",
-        "markdown-preview-enhanced.enableWikiLinkSyntax": true,
-        "markdown-preview-enhanced.wikiLinkFileExtension": ".md",
         "editor.snippetSuggestions": "inline",
         "editor.suggest.snippetsPreventQuickSuggestions": false,
         "editor.suggest.showSnippets": true,
         "editor.tabCompletion": "on",
-        "gitdoc.enabled": false,
-        "dendron.defaultJournalAddBehavior": "childOfDomainNamespace",
+        "dendron.defaultJournalAddBehavior": "childOfDomainNamespace"
     },
     "extensions": {
         "recommendations": [

@@ -1,17 +1,19 @@
 version: 1
 vaults:
     -
-        fsPath: repos/org-private
-        remote:
-            type: git
-            url: 'TODO'
-        name: private
-    -
-        fsPath: repos/org-dev
+        fsPath: org-dev
         name: dev
-        remote:
-            type: git
-            url: 'TODO'
+        # UNCOMMENT and follow instructions [here](https://wiki.dendron.so/notes/401c5889-20ae-4b3a-8468-269def4b4865.html#converting-a-local-vault-to-a-remote-vault) 
+        # remote:
+        #     type: git
+        #     url: 
+    -
+        fsPath: org-private
+        name: private
+        # UNCOMMENT and follow instructions [here](https://wiki.dendron.so/notes/401c5889-20ae-4b3a-8468-269def4b4865.html#converting-a-local-vault-to-a-remote-vault) 
+        # remote:
+        #     type: git
+        #     url: 
 useFMTitle: true
 useNoteTitleForLink: true
 usePrettyRefs: false
@@ -19,18 +21,28 @@ noXVaultWikiLink: true
 site:
     copyAssets: true
     siteHierarchies:
-        - handbook
+        - root
     siteRootDir: docs
     usePrettyRefs: true
-    siteUrl: 'TODO'
     title: Dendron
     duplicateNoteBehavior:
         action: useVault
         payload:
-            - dendron
-            - handbook
-            - notes
-            - aws
+            - private
+            - dev
 initializeRemoteVaults: true
 useKatex: false
 defaultInsertHierarchy: templates
+journal:
+    dailyDomain: daily
+    name: journal
+    dateFormat: y.MM.dd
+    addBehavior: childOfDomainNamespace
+    firstDayOfWeek: 1
+dev:
+    previewV2Enabled: false
+scratch:
+    name: scratch
+    dateFormat: y.MM.dd.HHmmss
+    addBehavior: asOwnDomain
+dendronVersion: 0.53.0
