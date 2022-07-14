@@ -22,6 +22,10 @@ workspace:
     dendronVersion: 0.103.0
     vaults:
         -
+            fsPath: org-public
+            name: public
+            selfContained: true
+        -
             fsPath: org-dev
             name: dev
             selfContained: true
@@ -105,6 +109,7 @@ publishing:
         payload:
             - private
             - dev
+            - public
     writeStubs: false
     seo:
         title: Dendron
