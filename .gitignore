@@ -1,2 +1,4 @@
 .dendron.*
 .dendron.cache.*
+
+.backup

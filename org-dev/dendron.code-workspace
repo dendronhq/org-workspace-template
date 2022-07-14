@@ -1,16 +1,8 @@
 {
     "folders": [
         {
-            "path": "org-dev/notes",
+            "path": "notes",
             "name": "dev"
-        },
-        {
-            "path": "org-private",
-            "name": "private"
-        },
-        {
-            "path": ".",
-            "name": "workspace"
         }
     ],
     "settings": {
@@ -18,19 +10,23 @@
         "files.autoSave": "onFocusChange",
         "pasteImage.path": "${currentFileDir}/assets/images",
         "pasteImage.prefix": "/",
-        "dendron.defaultTimestampDecorationFormat": "DATE_MED_WITH_WEEKDAY",
+        "markdown-preview-enhanced.enableWikiLinkSyntax": true,
+        "markdown-preview-enhanced.wikiLinkFileExtension": ".md",
         "editor.snippetSuggestions": "inline",
         "editor.suggest.snippetsPreventQuickSuggestions": false,
         "editor.suggest.showSnippets": true,
         "editor.tabCompletion": "on",
-        "dendron.defaultJournalAddBehavior": "childOfDomainNamespace"
+        "dendron.enableSelfContainedVaultWorkspace": true
     },
     "extensions": {
         "recommendations": [
+            "dendron.dendron",
             "dendron.dendron-paste-image",
             "dendron.dendron-markdown-shortcuts",
+            "redhat.vscode-yaml"
         ],
         "unwantedRecommendations": [
+            "dendron.dendron-markdown-links",
             "dendron.dendron-markdown-notes",
             "shd101wyy.markdown-preview-enhanced",
             "kortina.vscode-markdown-notes",
